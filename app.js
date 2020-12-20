@@ -34,9 +34,11 @@ function getStationLocation(e){
       htmlLat.innerHTML = latitude;
 
 
-
+      setTimeout(getStationLocation, 5000);
+     } else {
+       console.log("ERROR: " + response.ERROR);
      }
-     setTimeout(getStationLocation, 5000);
+
 
   }
 
