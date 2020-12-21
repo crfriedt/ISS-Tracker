@@ -24,7 +24,6 @@ function getStationLocation(e){
       let parsedLocation = JSON.parse(this.responseText);
       let longitude = parsedLocation.iss_position.longitude;
       let latitude = parsedLocation.iss_position.latitude;
-      console.log(latitude,longitude);
 
       // Marker
       let marker = L.marker([latitude,longitude]).addTo(mymap);
